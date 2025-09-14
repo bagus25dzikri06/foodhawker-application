@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/foodhawkerdb
+    username: foodhawker_user
+    password: foodhawker123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        enable_lazy_load_no_trans: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  profiles:
+    active: staging
+
+app:
+  upload-directory: foodhawker-uploads
+  folder-temp: ./foodhawker-temp/
