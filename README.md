@@ -13,7 +13,7 @@ FoodHawker is a Spring Boot project designed to facilitate online food ordering 
 - Spring Boot Framework 3.5.5
 - Spring Data JPA
 - Hibernate
-- PostgreSQL
+- PostgreSQL 17
 - Lombok
 - JSON Web Token
 
